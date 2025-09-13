@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padmavilla City – Cluster Eksklusif</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="loader"></div>
+
+  <nav>
+    <div class="nav-container">
+      <img src="logo.png" alt="Padmavilla Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="unit.html">Unit</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><button onclick="toggleDarkMode()">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-overlay">
+      <h1>Padmavilla City</h1>
+      <p>Cluster Perumahan Modern & Nyaman</p>
+      <button onclick="bukaPopup()">Lihat Detail Unit</button>
+    </div>
+  </header>
+
+  <section class="unit-grid">
+    <div class="unit-card">
+      <img src="unit1.jpg" alt="Type A" />
+      <h3>Type A – Rp 1.050.000.000</h3>
+      <p>3 Kamar Tidur, 2 Kamar Mandi, Carport, Taman Belakang</p>
+    </div>
+    <div class="unit-card">
+      <img src="unit2.jpg" alt="Type B" />
+      <h3>Type B – Rp 1.200.000.000</h3>
+      <p>4 Kamar Tidur, 3 Kamar Mandi, Balkon, Smart Home System</p>
+    </div>
+  </section>
+
+  <section class="parallax">
+    <h2>Lokasi Strategis di Jakarta Timur</h2>
+  </section>
+
+  <div id="popup" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="tutupPopup()">&times;</span>
+      <h2>Detail Unit Padmavilla City</h2>
+      <p>Harga mulai dari Rp 1.050.000.000. Lokasi strategis di Jakarta Timur.</p>
+      <a href="https://wa.me/6281234567890" target="_blank">
+        <button>Hubungi via WhatsApp</button>
+      </a>
+    </div>
+  </div>
+
+  <a href="https://wa.me/6281234567890" class="wa-float" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Padmavilla City. Website by FAIZI.</p>
+    <div class="social-icons">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
